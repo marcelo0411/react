@@ -118,3 +118,26 @@ a.z-slt {
   height: 19px;
   background-position: -190px 0;
 }
+
+.m-nav li.lst,
+.m-nav li.fst span {
+  background: none;
+}
+
+.f-pr {
+  position: relative;
+  zoom: 1;
+}
+
+.m-subnav {
+  z-index: 90;
+  height: 35px;
+  box-sizing: border-box;
+  background-color: #c20c0c;
+  border-bottom: 1px solid #a40011;
+}
+.m-subnav-up {
+  height: 5px;
+  _overflow: hidden;
+  border-bottom: none;
+}
