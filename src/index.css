@@ -67,3 +67,16 @@ html {
   overflow: hidden;
 }
 
+body, textarea, select, input, button {
+  font-size: 12px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-size-adjust: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+[hidefocus] {
+  outline: none;
+}

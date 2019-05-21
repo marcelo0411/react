@@ -55,6 +55,18 @@ class Header extends React.Component {
                             <a href="/#" hidefocus="true">网易云音乐</a>
                         </h1>
                         <HeaderNav />
+                        <div className="m-tophead f-pr j-tflag">
+                            <a className="link s-fc3"  hidefocus="true">登录</a>
+                        </div>
+                        <a className="m-topvd f-pr m-creator-center">创作者中心</a>
+                        <div className="m-srch f-pr j-suggest" id="g_search">
+                            <div className="srchbg">
+                                <span className="parent">
+                                    <input type="text" name="search" className="txt j-flag"  />
+                                    <label className="ph j-flag" id="auto-id">音乐/视频/电台/用户</label>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="m-subnav m-subnav-up f-pr j-tflag"></div>

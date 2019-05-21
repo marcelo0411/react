@@ -141,3 +141,82 @@ a.z-slt {
   _overflow: hidden;
   border-bottom: none;
 }
+.m-srch, .m-srch .srchbg {
+  float: right;
+  width: 158px;
+  height: 32px;
+}
+.m-srch .srchbg {
+  margin-top: 19px;
+  background-position: 0 -99px;
+  background-color: #fff;
+  border-radius: 32px;
+}
+.m-srch .parent {
+  display: block;
+  position: relative;
+  margin: 8px 0 0 30px;
+}
+
+.m-srch .parent input {
+  width: 95%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  color: #333;
+  line-height: 16px;
+}
+
+img, .txt {
+  border: 0;
+}
+.m-srch .parent label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  color: #9b9b9b;
+  cursor: text;
+}
+.m-creator-center {
+  background: none!important;
+}
+
+.m-topvd:hover {
+    background-position: -100px -140px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #ccc;
+}
+
+.m-topvd {
+    float: right;
+    width: 90px;
+    height: 32px;
+    margin: 19px 0 0 12px;
+    box-sizing: border-box;
+    padding-left: 16px;
+    border: 1px solid #4F4F4F;
+    background-position: 0 -140px;
+    line-height: 33px;
+    color: #ccc;
+    border-radius: 20px;
+}
+
+.m-tophead {
+  float: right;
+  height: 45px;
+  margin: 19px 0 0 20px;
+  padding: 0 22px 0 0;
+  background-position: right -47px;
+}
+.m-tophead .link, .m-tophead .link:hover {
+  display: block;
+  width: 28px;
+  margin-top: 7px;
+  color: #787878;
+}
+.s-fc3, a.s-fc3:hover {
+  color: #666;
+}
