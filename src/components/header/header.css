@@ -1,0 +1,120 @@
+.music-top {
+  position: relative;
+  z-index: 1000;
+  height: 70px;
+  box-sizing: border-box;
+  background: #242424;
+  border-bottom: 1px solid #000;
+}
+
+.music-top .content {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.music-top .content .music-logo {
+  float: left;
+  width: 176px;
+  height: 69px;
+  background-position: 0 0;
+}
+
+.music-top .content .music-logo a {
+  float: left;
+  width: 157px;
+  height: 100%;
+  padding-right: 20px;
+  text-indent: -9999px;
+}
+.f-cb {
+  *zoom: 1;
+}
+.f-cb:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.m-nav {
+  float: left;
+}
+
+.m-nav li,
+.m-nav li span,
+.m-nav a,
+.m-nav a em {
+  float: left;
+  height: 70px;
+  font-size: 14px;
+}
+
+.m-nav li {
+  position: relative;
+  *zoom: 1;
+  background-position: right -300px;
+}
+
+.m-nav a {
+  padding: 0 19px;
+  text-align: center;
+  line-height: 70px;
+  color: #ccc;
+}
+
+a.z-slt {
+  background: #000;
+  text-decoration: none;
+  color: #fff;
+}
+
+.m-top .logo,
+.m-nav .cor,
+.m-nav .hot,
+.m-srch .srchbg,
+.m-mail,
+.m-tophead,
+.m-topvd {
+  background: url("./../../assets/download.png") no-repeat 0 9999px;
+}
+
+.m-nav a:hover,
+.m-nav a.z-slt {
+  background: #000;
+  text-decoration: none;
+  color: #fff;
+}
+.m-nav a:hover,
+.m-nav a.z-slt {
+  background: #000;
+  text-decoration: none;
+  color: #fff;
+}
+.m-nav a.z-slt .cor {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 64px;
+  width: 12px;
+  height: 7px;
+  margin-left: -6px;
+  overflow: hidden;
+  background-position: -226px 0;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .m-nav a.z-slt .cor {
+    top: 64px;
+    background-position: -105px -70px;
+    background-size: 120px auto;
+  }
+}
+.m-nav .hot {
+  display: block;
+  position: absolute;
+  top: 21px;
+  left: 100px;
+  width: 28px;
+  height: 19px;
+  background-position: -190px 0;
+}
