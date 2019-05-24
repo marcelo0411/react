@@ -1,5 +1,6 @@
 import React from 'react';
 import './header.css';
+import HeaderPopUp from '../header-popup/headerPopUp';
 
 const HeaderTitleItem = ['发现音乐', '我的音乐', '朋友', '商城', '音乐人', '下载客户端'];
 
@@ -45,6 +46,14 @@ class HeaderNav extends React.Component {
 }
 
 class Header extends React.Component {
+    constructor(props) {
+        super(props);
+        this.headerPopUpComponent = this.headerPopUpComponent.bind(this);
+    }
+
+    headerPopUpComponent() {
+        alert('1234')
+    }
 
     render() {
         return (
@@ -56,13 +65,13 @@ class Header extends React.Component {
                         </h1>
                         <HeaderNav />
                         <div className="m-tophead f-pr j-tflag">
-                            <a className="link s-fc3"  hidefocus="true">登录</a>
+                            <a className="link s-fc3" hidefocus="true" onClick={this.headerPopUpComponent}>登录</a>
                         </div>
                         <a className="m-topvd f-pr m-creator-center">创作者中心</a>
                         <div className="m-srch f-pr j-suggest" id="g_search">
                             <div className="srchbg">
                                 <span className="parent">
-                                    <input type="text" name="search" className="txt j-flag"  />
+                                    <input type="text" name="search" className="txt j-flag" />
                                     <label className="ph j-flag" id="auto-id">音乐/视频/电台/用户</label>
                                 </span>
                             </div>
@@ -70,6 +79,7 @@ class Header extends React.Component {
                     </div>
                 </div>
                 <div className="m-subnav m-subnav-up f-pr j-tflag"></div>
+                <HeaderPopUp />
             </div>
         )
     }
