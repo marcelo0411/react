@@ -104,6 +104,7 @@ class Header extends React.Component {
                         <HeaderNav />
                         <div className="m-tophead f-pr j-tflag">
                             <a className="link s-fc3" hidefocus="true" onMouseOver={this.headerPopUpComponent}>登录</a>
+                            <HeaderDownMenu />
                         </div>
                         <a className="m-topvd f-pr m-creator-center">创作者中心</a>
                         <div className="m-srch f-pr j-suggest" id="g_search">
@@ -122,7 +123,6 @@ class Header extends React.Component {
                 </div>
                 <div className="m-subnav m-subnav-up f-pr j-tflag"></div>
                 <HeaderPopUp />
-                <HeaderDownMenu />
             </div>
         )
     }
