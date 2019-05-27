@@ -80,3 +80,6 @@ a:hover {
 [hidefocus] {
   outline: none;
 }
+input{
+  outline: none;
+}
