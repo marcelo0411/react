@@ -1,6 +1,8 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import './header.css';
 import HeaderPopUp from '../header-popup/headerPopUp';
+import HeaderDownMenu from '../header-down-menu/headerDownMenu';
 
 const HeaderTitleItem = ['发现音乐', '我的音乐', '朋友', '商城', '音乐人', '下载客户端'];
 
@@ -101,7 +103,7 @@ class Header extends React.Component {
                         </h1>
                         <HeaderNav />
                         <div className="m-tophead f-pr j-tflag">
-                            <a className="link s-fc3" hidefocus="true" onClick={this.headerPopUpComponent}>登录</a>
+                            <a className="link s-fc3" hidefocus="true" onMouseOver={this.headerPopUpComponent}>登录</a>
                         </div>
                         <a className="m-topvd f-pr m-creator-center">创作者中心</a>
                         <div className="m-srch f-pr j-suggest" id="g_search">
@@ -120,6 +122,7 @@ class Header extends React.Component {
                 </div>
                 <div className="m-subnav m-subnav-up f-pr j-tflag"></div>
                 <HeaderPopUp />
+                <HeaderDownMenu />
             </div>
         )
     }
