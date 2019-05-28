@@ -40,7 +40,7 @@ class HeaderNavLi extends React.Component {
             return (
                 <li>
                     <span>
-                        <Link hidefocus="true" to={`/${this.props.link}`} >
+                        <Link hidefocus="true" onClick={(e) => this.headerLiClick(e)} to={`/${this.props.link}`} >
                             <em>{this.props.item}</em>
                             <sub className="cor">&nbsp;</sub>
                         </Link>

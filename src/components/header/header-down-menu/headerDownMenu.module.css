@@ -8,11 +8,12 @@
   box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.5);
   border-radius: 4px;
 }
+
 .f_cb {
   zoom: 1;
 }
-.m_tlist li,
-.m_tlist li a {
+
+.m_tlist li, .m_tlist li a {
   float: left;
   box-sizing: border-box;
   width: 100%;
@@ -28,16 +29,33 @@
   line-height: 39px;
 }
 
-.m_tlist .icn_mobile {
-  background-position: 0 0;
-}
 .m_tlist .icn {
   float: left;
   width: 18px;
   height: 18px;
   margin: 10px 10px 0 -7px;
 }
-.m_tlist .icn,
-.m_tlist .arr {
+
+.m_tlist .icn, .m_tlist .arr {
   background: url("../../../assets/toplist.png") no-repeat 0 9999px;
+}
+
+.m_tlist .icn_mobile {
+  background-position: 0 0;
+}
+
+.m_tlist .icn_wechat {
+  background-position: -20px -20px;
+}
+
+.m_tlist .icn_qq {
+  background-position: -20px -40px;
+}
+
+.m_tlist .icn_email {
+  background-position: 0px -40px;
+}
+
+.m_tlist .icn_weibo {
+  background-position: 0px -20px;
 }

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import styles from './headerDownMenu.module.css';
 
@@ -18,10 +19,32 @@ class HeaderDownMenuLi extends React.Component {
         console.log('open login')
     }
     render() {
+        let classx;
+        switch (this.props.positionname) {
+            case 'mobile':
+                classx = styles.icn_mobile;
+                break;
+            case 'wechat':
+                classx = styles.icn_wechat;
+                break;
+            case 'qq':
+                classx = styles.icn_qq;
+                break;
+            case 'weibo':
+                classx = styles.icn_weibo;
+                break;
+            case 'email':
+                classx = styles.icn_email;
+                break;
+            default:
+                classx = '';
+                break
+        }
+
         return (
             <li className={styles.lb}>
-                <a className={styles.itm_1} hidefocus="true" onClick={this.openLoginPop} href="www.163.com">
-                    <i className={`${styles.icn} ${this.props.positionname}`}></i>
+                <a className={styles.itm_1} hidefocus="true" onClick={this.openLoginPop}>
+                    <i className={`${classx} ${styles.icn}`}></i>
                     <em>{this.props.item}</em>
                 </a>
             </li>
