@@ -1,12 +1,11 @@
 import React from 'react';
-import Header from '../../components/header/header';
 
 class Home extends React.Component {
 
-    render(){
-        return(
-            <div>
-                <Header />
+    render() {
+        return (
+            <div style={{ height: '500px' }}>
+                <p>我是首页</p>
             </div>
         )
     }
